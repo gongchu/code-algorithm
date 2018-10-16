@@ -12,6 +12,17 @@
     <wildcardResourcePatterns>
       <entry name="!?*.java" />
     </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="algorithmcommon" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="algorithmcommon" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="EntryPointsManager">
     <entry_points />
@@ -35,14 +46,6 @@
   </component>
   <component name="JUnitProjectSettings">
     <option name="TEST_RUNNER" value="UI" />
-  </component>
-  <component name="JavacSettings">
-    <option name="DEBUGGING_INFO" value="true" />
-    <option name="GENERATE_NO_WARNINGS" value="false" />
-    <option name="DEPRECATION" value="true" />
-    <option name="ADDITIONAL_OPTIONS_STRING" value="" />
-    <option name="MAXIMUM_HEAP_SIZE" value="128" />
-    <option name="USE_GENERICS_COMPILER" value="false" />
   </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
@@ -72,9 +75,17 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/algorithmcommon/pom.xml" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module filepath="$PROJECT_DIR$/code-java-algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithmcommon/algorithmcommon.iml" filepath="$PROJECT_DIR$/algorithmcommon/algorithmcommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code-java-algorithm.iml" filepath="$PROJECT_DIR$/code-java-algorithm.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" />
